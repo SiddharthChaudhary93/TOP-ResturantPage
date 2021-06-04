@@ -9,6 +9,16 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/displayOnClick.js":
+/*!*******************************!*\
+  !*** ./src/displayOnClick.js ***!
+  \*******************************/
+/***/ (() => {
+
+eval("const buttons = document.querySelectorAll('.nav>li>a');\nconst allDivs = document.querySelectorAll('.show');\n// console.log(buttons);\n\nfunction displayField(e){\n    e.preventDefault();\n    // console.log(this.id);\n    buttons.forEach(button => button.style.border='none');\n    this.style.border = `2px solid white`;\n    allDivs.forEach(div => {\n        div.style.display='none';\n        if(div.id === this.id){\n            div.style.display='block';\n            \n        }\n    });\n    \n    \n    \n}\n\n\nallDivs.forEach(div => {\n    div.style.display='none';\n    if(div.id === 'home'){\n        div.style.display='block';\n    }\n    \n});\n\n\nbuttons.forEach(button => button.addEventListener('click',displayField));\n\n//# sourceURL=webpack://top-resturantpage/./src/displayOnClick.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -16,7 +26,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navBar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navBar */ \"./src/navBar.js\");\n/* harmony import */ var _navBar__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_navBar__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack://top-resturantpage/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navBar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navBar */ \"./src/navBar.js\");\n/* harmony import */ var _navBar__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_navBar__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _displayOnClick__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./displayOnClick */ \"./src/displayOnClick.js\");\n/* harmony import */ var _displayOnClick__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_displayOnClick__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack://top-resturantpage/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav
   \***********************/
 /***/ (() => {
 
-eval("const navBar = document.querySelector('#main');\nconst header = document.querySelector('header');\nconst content = document.querySelector('main');\nconst topOfNav = header.offsetHeight ;\n\nfunction makeNav(){\n    console.log(navBar.offsetHeight);\n    if(window.scrollY > topOfNav){\n        content.style.paddingTop = navBar.offsetHeight + topOfNav + 'px';\n        navBar.classList.remove('main');\n        navBar.classList.add('main-fixed');\n    }\n    else{\n        content.style.paddingTop = 0;\n        navBar.classList.add('main');\n        navBar.classList.remove('main-fixed');\n    }\n}\nwindow.addEventListener('scroll',makeNav);\n\n\n//# sourceURL=webpack://top-resturantpage/./src/navBar.js?");
+eval("const navBar = document.querySelector('#main');\nconst header = document.querySelector('header');\nconst content = document.querySelector('main');\nconst topOfNav = header.offsetHeight ;\n\nfunction makeNav(){\n    // console.log(navBar.offsetHeight);\n    if(window.scrollY > topOfNav){\n        content.style.paddingTop = navBar.offsetHeight + topOfNav + 'px';\n        navBar.classList.remove('main');\n        navBar.classList.add('main-fixed');\n    }\n    else{\n        content.style.paddingTop = 0;\n        navBar.classList.add('main');\n        navBar.classList.remove('main-fixed');\n    }\n}\nwindow.addEventListener('scroll',makeNav);\n\n\n//# sourceURL=webpack://top-resturantpage/./src/navBar.js?");
 
 /***/ })
 
