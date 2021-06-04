@@ -1,9 +1,8 @@
-.content{
+.content_1{
     @include allDivs;
-    
     display: flex;
-    gap:20px;
     align-items: center;
+    gap:20px;
     img{
        max-width: 400px;
 

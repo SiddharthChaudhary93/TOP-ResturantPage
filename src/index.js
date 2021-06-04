@@ -1,1 +1,2 @@
-import './navBar'
+import './navBar';
+import './displayOnClick';

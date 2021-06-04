@@ -4,7 +4,7 @@ const content = document.querySelector('main');
 const topOfNav = header.offsetHeight ;
 
 function makeNav(){
-    console.log(navBar.offsetHeight);
+    // console.log(navBar.offsetHeight);
     if(window.scrollY > topOfNav){
         content.style.paddingTop = navBar.offsetHeight + topOfNav + 'px';
         navBar.classList.remove('main');

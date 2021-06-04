@@ -6,6 +6,9 @@
 @import './menu.scss';
 @import './reservation';
 @import './contact';
+@import './home';
+
+
 body{
     padding: 0;
     margin:0;
@@ -28,7 +31,7 @@ footer{
 
 
 @media (max-width:800px){
-    .content{
+    .content_1{
         img{
             max-width:100%;
         }
