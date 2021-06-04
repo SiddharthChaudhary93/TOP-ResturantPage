@@ -1,0 +1,28 @@
+$translucentBlack : rgba(0, 0, 0, 0.3);
+$darkerTransBlack : rgba(0, 0, 0, 0.5);
+$fontColor: white;
+$footerFont: 18px;
+$navFont: 22px;
+$mainHeadingFont : 70px; 
+$headingInMovingNav: 30px;
+$headerPadding : 50px;
+$menuSpanNameSize: 35px;
+$contentBackground: rgba(242, 242, 242,0.5);
+$fullFontColor : #38253d;
+
+@mixin aLink{
+    color:$fontColor;
+    text-decoration: none;
+    padding:10px;
+}
+
+@mixin allDivs{
+    padding:50px;
+    background: $contentBackground;
+    margin:50px;
+    color:$fullFontColor;
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

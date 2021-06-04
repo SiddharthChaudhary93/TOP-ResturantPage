@@ -1,0 +1,66 @@
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color:$fontColor;
+    background: $translucentBlack;
+    padding:$headerPadding;
+    span{
+        display: block;
+        text-align: center;
+        font-size: $mainHeadingFont;
+        text-transform: uppercase;
+        
+    }
+    .nav{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        padding: 0;
+        gap: 20px;
+        a{
+            @include aLink;
+        }
+        a:hover{
+            border: 2px solid $fontColor;
+        }
+        
+    }
+    
+}
+
+.main-fixed{
+    width: 95%;
+    position: fixed;
+    top:0;
+    background: $darkerTransBlack;
+    
+    span{
+        font-weight: 700;
+        font-size:$headingInMovingNav;
+    }
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    color: $fontColor;
+    font-size: $navFont;
+    .nav{
+        padding: 0;
+        margin:0;
+        list-style:  none;
+        display: flex;
+        gap:20px;
+        justify-content: flex-end;
+        align-items: center;
+        a{
+            @include aLink;
+        }
+        a:hover{
+            border: 2px solid $fontColor;
+        }
+    }
+    
+}
+

@@ -1,0 +1,17 @@
+.content{
+    @include allDivs;
+    
+    display: flex;
+    gap:20px;
+    align-items: center;
+    img{
+       max-width: 400px;
+
+    }
+    
+    .desc{
+        text-align: center;
+    }
+    
+}
+

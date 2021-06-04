@@ -1,0 +1,242 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 50px;
+}
+
+.main span {
+  display: block;
+  text-align: center;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+.main .nav {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+  padding: 0;
+  gap: 20px;
+}
+
+.main .nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.main .nav a:hover {
+  border: 2px solid white;
+}
+
+.main-fixed {
+  width: 95%;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 40px;
+  color: white;
+  font-size: 22px;
+}
+
+.main-fixed span {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.main-fixed .nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-fixed .nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.main-fixed .nav a:hover {
+  border: 2px solid white;
+}
+
+.content {
+  padding: 50px;
+  background: rgba(242, 242, 242, 0.5);
+  margin: 50px;
+  color: #38253d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content img {
+  max-width: 400px;
+}
+
+.content .desc {
+  text-align: center;
+}
+
+.menu {
+  padding: 50px;
+  background: rgba(242, 242, 242, 0.5);
+  margin: 50px;
+  color: #38253d;
+  text-align: center;
+}
+
+.menu h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menu .element {
+  margin: 20px 0;
+}
+
+.menu span {
+  display: block;
+}
+
+.menu .name {
+  font-size: 35px;
+}
+
+.reservations {
+  padding: 50px;
+  background: rgba(242, 242, 242, 0.5);
+  margin: 50px;
+  color: #38253d;
+}
+
+.reservations h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reservations form {
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.reservations form input {
+  height: 30px;
+}
+
+.reservations form button {
+  font-size: 20px;
+  display: block;
+  padding: 20px;
+  margin: auto;
+  border: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.reservations form button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+  background: #cd9a3d;
+  color: white;
+}
+
+.contact {
+  padding: 50px;
+  background: rgba(242, 242, 242, 0.5);
+  margin: 50px;
+  color: #38253d;
+}
+
+.contact h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact p {
+  text-align: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url(../dist/images/RESTAURANT-01.jpg) no-repeat center center fixed;
+  position: relative;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  line-height: 0.3;
+  font-size: 18px;
+}
+
+@media (max-width: 800px) {
+  .content {
+    display: block;
+  }
+  .content img {
+    max-width: 100%;
+  }
+  .main-fixed span {
+    display: none;
+  }
+  .reservations form {
+    max-width: 90%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

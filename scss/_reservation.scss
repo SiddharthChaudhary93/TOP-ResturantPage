@@ -1,0 +1,31 @@
+.reservations{
+    @include allDivs;
+    
+    form{
+        max-width: 50%;;
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        label{
+            
+        }
+        input{
+            height: 30px;
+            
+        }
+        button{
+            font-size: 20px;
+            display: block;
+            padding:20px;
+            margin:auto;
+            border:none;
+            transition: all 0.5s;
+        }
+        button:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+            background: #cd9a3d;
+            color:white;
+        }
+    }
+}

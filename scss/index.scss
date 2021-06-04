@@ -1,0 +1,51 @@
+@import 'variables';
+
+@import './navBar.scss';
+@import './about.scss';
+
+@import './menu.scss';
+@import './reservation';
+@import './contact';
+body{
+    padding: 0;
+    margin:0;
+    background: url(../dist/images/RESTAURANT-01.jpg)no-repeat center center fixed;
+    position: relative;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+footer{
+    background: $translucentBlack ;
+
+    color: $fontColor;
+    padding: 10px;
+    text-align: center;
+    line-height: 0.3;
+    font-size:$footerFont;
+}
+
+
+@media (max-width:800px){
+    .content{
+        img{
+            max-width:100%;
+        }
+        display: block;
+    }
+    .main-fixed{
+        span{
+            display: none;
+        }
+    }
+    .reservations{
+        form{
+            max-width:90%;
+        }
+    }
+}
+
+
+
+
