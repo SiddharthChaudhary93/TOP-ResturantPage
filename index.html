@@ -5,13 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../scss/index.css">
 </head>
 <body>
-    <div class="content">
-        <h1 class='main_title'>Name of the resturant</h1>
+
+    <header>
         
-    </div>
+        <nav id="main" class='main'>
+            <span>RESTURANT</span>
+            <ul class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#resy">Reservations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <div class="content">
+            
+            <div id='about' class='about'>
+                <img src="./images/chef.jpg" alt="painting of a chef cooking">
+            </div>
+            <div class="desc">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, asperiores rem. Recusandae, repellat amet dolores consequatur, perspiciatis, aspernatur quidem quod soluta aliquam nesciunt dolorem fuga velit totam repudiandae iure excepturi!</p>
+            </div>
+        </div>
+
+        <div class="menu" id='menu'>
+            <h2>menu</h2>
+            <!-- <h3>TEA & COFFEE</h3> -->
+            
+            <div class="element">
+                <span class="name">ALL TEAS</span>
+                
+                <span class="desc">Chamomile, Mint , Earl Gray, Green, Darjeeling</span>
+                
+                <span class="cost">$5.50</span>
+            </div>
+
+            <div class="element">
+                <span class="name">Coffee</span>
+                <span class="cost">$5.50</span>
+            </div>
+
+            <div class="element">
+                <span class="name">DECAF Coffee</span>
+                <span class="cost">$5.50</span>
+            </div>
+
+            <div class="element">
+                <span class="name">Espresso</span>
+                <span class="cost">$4.50</span>
+            </div>
+
+            <div class="element">
+                <span class="name">Decaf Espresso</span>
+                <span class="cost">$5.50</span>
+            </div>
+
+            <div class="element">
+                <span class="name">Double Espresso</span>
+                <span class="cost">$5.50</span>
+            </div>
+
+            <div class="element">
+                <span class="name">CAPPUCCINO</span>
+                <span class="cost">$6.00</span>
+            </div>
+
+            <div class="element">
+                <span class="name">Double CAPPUCCINO</span>
+                <span class="cost">$6.00</span>
+            </div>
+                
+                
+        </div>
+
+        <div class="reservations" id='resy'>
+            <h2>Need a Table?</h2>
+            <form action="" id='resy_form'>
+                <label for="name">Name:</label>
+                <input type="text" id='name'>
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" name="" id="date">
+                <br>
+                <label for="time">Time:</label>
+                <input type="time" name="" id="time">
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="text" name="" id="phone">
+                <br>
+                <label for="guest">No of Guests:</label>
+                <input type="number" id='guest'>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="" id="email">
+                <br>
+                <button type='submit'>>>Create<<</button>
+            </form>
+        </div>
+
+        <div class="contact" id='contact'>
+            <h2>We are here</h2>
+            <p>address : 1234 Something street</p>
+            <p>phone no : 1234567890</p>
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>bySiddharthChaudhary</p>
+        <p>forTheOdinProject</p>
+    </footer>
 </body>
 
 <script src='main.js'></script>
